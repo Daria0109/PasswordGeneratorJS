@@ -5,7 +5,7 @@ const checkUppercase = document.querySelector(".uppercase");
 const checkLowercase = document.querySelector(".lowercase");
 const checkNumbers = document.querySelector(".numbers");
 const checkSymbols = document.querySelector(".symbols");
-const clipboardBtn = document.querySelector(".clipboard-btn");
+const copyBtn = document.querySelector(".copy-btn");
 const generateBtn = document.querySelector(".generate-btn");
 
 // Object of random functions
@@ -51,7 +51,20 @@ function generatePassword(length, upper, lower, number, symbol) {
   return generatedPassword;
 }
 
-// Generate functions - https://www.w3schools.com/html/html_charset.asp
+// Copy password function
+copyBtn.addEventListener("click", () => {
+  const textarea = document.createElement("textarea");
+  const password = resultOutput.innerText;
+  if (!password) return;
+  textarea.value = password;
+  document.body.appendChild(textarea);
+  textarea.select();
+  document.execCommand("copy");
+  textarea.remove();
+  alert("Password copied to clipboard!");
+});
+
+// Generators functions - https://www.w3schools.com/html/html_charset.asp
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
 }
