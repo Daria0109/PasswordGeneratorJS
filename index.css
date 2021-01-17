@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #bdd5ea;
+  font-family: "Muli", sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  min-height: 100vh;
+}
+.container {
+  width: 450px;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #577399;
+  border-radius: 5px;
+  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  box-shadow: 0px 2px 10px rgba(255, 255, 255, 0.2);
+  font-size: 18px;
+}
+.title {
+  margin: 10px 0 20px;
+}
+.result-container {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 12px 10px;
+  height: 50px;
+  width: 100%;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 20px;
+}
+.result {
+  word-wrap: break-word;
+  max-width: calc(100% - 40px);
+}
+.clipboard-btn {
+  background-color: #bdd5ea;
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.clipboard-btn:hover {
+  background-color: #c2daf0ce;
+}
+.clipboard-btn:active {
+  background-color: #c2daf0ce;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+}
+.settings {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.length {
+  max-width: 70px;
+  padding: 5px 7px;
+  background-color: #bdd5ea;
+  border: none;
+  font-size: 16px;
+}
+.check {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.generate-btn {
+  background-color: #495867;
+  color: #e2e2e2;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  padding: 15px 20px;
+  font-size: 18px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.generate-btn:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #b4b4b4;
+}
+.generate-btn:active {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+}
