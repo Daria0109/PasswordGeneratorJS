@@ -42,7 +42,7 @@ body {
   font-size: 18px;
   letter-spacing: 1px;
   padding: 12px 10px;
-  height: 50px;
+  min-height: 50px;
   width: 100%;
   border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -59,7 +59,8 @@ body {
   background-color: #bdd5ea;
   font-size: 20px;
   position: absolute;
-  top: 5px;
+  top: 50%;
+  transform: translateY(-50%);
   right: 5px;
   height: 40px;
   width: 40px;
@@ -71,6 +72,10 @@ body {
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
 }
 .copy-btn:hover {
   background-color: #c2daf0ce;
@@ -87,7 +92,7 @@ body {
   margin-bottom: 10px;
 }
 
-.length {
+.input-length {
   max-width: 70px;
   padding: 5px 7px;
   background-color: #bdd5ea;
@@ -105,7 +110,7 @@ body {
   border: none;
   outline: none;
   border-radius: 5px;
-  padding: 15px 20px;
+  padding: 15px 30px;
   font-size: 18px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;

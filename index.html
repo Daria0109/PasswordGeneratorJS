@@ -10,14 +10,15 @@
     <div class="container">
       <h1 class="title">Password Generator</h1>
       <div class="result-container">
-        <div class="result"></div>
-        <button class="copy-btn">
+        <span class="result"></span>
+        <button class="copy-btn" title="Copy">
           <i class="fas fa-copy" style="color: #495867"></i>
         </button>
       </div>
       <div class="settings">
         <label>Password length</label>
-        <input class="length" type="number" value="10" />
+        <input class="range-length" type="range" value="10" max="50" min="1" />
+        <input class="input-length" type="number" value="10" />
       </div>
 
       <div class="settings">

@@ -1,12 +1,22 @@
 // Elements
 const resultOutput = document.querySelector(".result");
-const inputLength = document.querySelector(".length");
+const rangeLength = document.querySelector(".range-length");
+const inputLength = document.querySelector(".input-length");
 const checkUppercase = document.querySelector(".uppercase");
 const checkLowercase = document.querySelector(".lowercase");
 const checkNumbers = document.querySelector(".numbers");
 const checkSymbols = document.querySelector(".symbols");
 const copyBtn = document.querySelector(".copy-btn");
 const generateBtn = document.querySelector(".generate-btn");
+
+// Input-range event listener
+rangeLength.addEventListener("input", setLengthOfPassword);
+inputLength.addEventListener("input", setLengthOfPassword);
+function setLengthOfPassword(e) {
+  const value = e.target.value;
+  rangeLength.value = value;
+  inputLength.value = value;
+}
 
 // Object of random functions
 const randomFanc = {
@@ -61,7 +71,7 @@ copyBtn.addEventListener("click", () => {
   textarea.select();
   document.execCommand("copy");
   textarea.remove();
-  alert("Password copied to clipboard!");
+  alert("The password is copied to the clipboard!");
 });
 
 // Generators functions - https://www.w3schools.com/html/html_charset.asp
