@@ -55,7 +55,7 @@ body {
   word-wrap: break-word;
   max-width: calc(100% - 40px);
 }
-.clipboard-btn {
+.copy-btn {
   background-color: #bdd5ea;
   font-size: 20px;
   position: absolute;
@@ -72,10 +72,10 @@ body {
   -ms-border-radius: 4px;
   -o-border-radius: 4px;
 }
-.clipboard-btn:hover {
+.copy-btn:hover {
   background-color: #c2daf0ce;
 }
-.clipboard-btn:active {
+.copy-btn:active {
   background-color: #c2daf0ce;
   box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
 }
